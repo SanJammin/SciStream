@@ -12,7 +12,21 @@ main {
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr;
+}
 
+@media (min-width: 500px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    } 
+    .technology {
+        grid-column: span 2;
+    }
+    .nasa {
+        grid-row: span 2;
+    }
+    .health {
+        grid-column: span 2;
+    } 
 }
 
 /* =================
